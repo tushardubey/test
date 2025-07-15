@@ -1,16 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('initial') {
+        stage('Say Hello') {
             steps {
-                echo 'First Stage Is completed'
-            }
-        }
-        
-        stage('main'){
-            steps {
-                bat 'dir /a'
+                echo "Pipeline fetched from GitHub!"
             }
         }
     }

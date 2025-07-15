@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('initial') {
+            steps {
+                echo 'First Stage Is completed'
+            }
+        }
+        
+        stage('main'){
+            steps {
+                bat 'dir /a'
+            }
+        }
+    }
+}
